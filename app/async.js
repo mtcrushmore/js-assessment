@@ -6,6 +6,8 @@ exports.asyncAnswers = {
   },
 
   manipulateRemoteData : function(url) {
-
+    $.get(url, function(data) {
+      return data;
+    })
   }
 };
